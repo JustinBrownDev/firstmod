@@ -3,9 +3,9 @@
 	"id": "first-mod",
 	"version": "${version}",
 	"name": "first mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Our first mod :D",
 	"authors": [
-		"Me!"
+		"ACM"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
