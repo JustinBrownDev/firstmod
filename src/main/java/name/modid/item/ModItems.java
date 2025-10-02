@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item firstitem = register("firstitem", Item::new, new Item.Settings());
+    public static final Item Compact_Disc = register("Compact_Disc", Item::new, new Item.Settings());
     //public static final Item ANOTHER_ITEM = registerItem("seconditem", new Item(new Item.Settings()));
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
@@ -26,17 +26,11 @@ public class ModItems {
 
         return item;
     }
-//    private static Item registerItem(String nam){
-//        Identifier id = Identifier.of(FirstMod.MOD_ID,nam);
-//        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
-//        Item.Settings settings = new Item.Settings().registryKey(key);
-//        return Registry.register(Registries.ITEM, key,new Item(settings));
-//    }
 
     public static void registerModItems(){
         FirstMod.LOGGER.info("Registering Mod Items for " + FirstMod.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(ModItems.firstitem);
+            entries.add(ModItems.Compact_Disc);
             //entries.add(ANOTHER_ITEM);
         });
     }

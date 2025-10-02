@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures":{
-    "layer0": "first-mod:item/firstitem"
+    "layer0": "first-mod:item/Compact_Disc"
   }
 }
