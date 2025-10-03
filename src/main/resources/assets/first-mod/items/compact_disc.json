@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "first-mod:item/Compact_Disc.json"
+    "model": "first-mod:item/compact_disc.json"
   }
 }
